@@ -15,25 +15,28 @@ header nav ul li {
     flex: 1;
 }
 
-section .lang_grid {
-    margin: 150px auto;
-    width: 60%;
-    display: flex;
+main {
+    width: 80%;
+    margin: 100px auto;
 }
 
-section .lang_grid li {
-    text-align: center;
+main #history {
     border: 1px solid black;
-    margin: 0 auto;
-    padding: 10px;
-    flex: 1;
+    height: 200px;
 }
 
-section .lang_grid li a img {
-    width: 100%;
-    object-fit: contain;
+main #characteristic {
+    border: 1px solid black;
+    height: 200px;
+    margin: 10px 0;
 }
 
+main #code_area {
+    font-size: medium;
+    max-width: 4000px;
+    height: 540px;
+    resize: vertical;
+}
 
 footer .footer_info {
     background-color: #31353F;
