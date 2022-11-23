@@ -1,0 +1,57 @@
+body {
+  background-color: aliceblue;
+}
+caption {
+  caption-side: top;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+table {
+  width: 60%;
+  margin: 50px auto 0px;
+  text-align: center;
+  padding: 8px;
+  background-color: antiquewhite;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+}
+th {
+  font-size: 25px;
+  border: 1px solid black;
+  padding: 10px;
+}
+td {
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+}
+tr:nth-child(even) {
+  background-color: aquamarine;
+}
+.box {
+  width: 60%;
+  margin: 30px auto;
+}
+.yellow.add {
+  background-color: yellow;
+}
+h2 {
+  font-size: 35px;
+}
+.box .interpret {
+  font-size: 20px;
+}
+.box .interpret p {
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+.box .compile {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+
+.box #build {
+  font-size: 20px;
+  line-height: 150%;
+}
