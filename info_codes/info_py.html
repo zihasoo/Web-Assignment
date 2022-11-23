@@ -6,43 +6,57 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
     <link rel="stylesheet" href="./info_style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.5/ace.js"></script>
-    <script src="info.js" defer></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () =>
+            ace.edit(document.getElementById("code_area"), {
+                mode: "ace/mode/python"
+            }));
+    </script>
 </head>
 <body>
-    <!--네비게이션-->
+<!--네비게이션-->
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">메인 화면</a></li>
+            <li><a href="../lang_comp.html">언어 비교</a></li>
+            <li><a href="info_js.html">Java Script</a></li>
+            <li><a href="info_cpp.html">C++</a></li>
+            <li><a href="info_py.html">Python</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">메인 화면</a></li>
-                <li><a href="../lang_comp.html">언어 비교</a></li>
-                <li><a href="info_js.html">Java Script</a></li>
-                <li><a href="info_cpp.html">C++</a></li>
-                <li><a href="info_py.html">Python</a></li>
-            </ul>
-        </nav>
+        "Python"
     </header>
 
-    <main>
-        <section id="history">
-            Python 의 역사
-        </section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/x7X9w_GIm1s" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-        <section id="characteristic">
-            Python 의 특징
-        </section>
+    <section id="history">
+        Python 의 역사
+    </section>
 
-        <section id="code_area">
+    <section id="characteristic">
+        Python 의 특징
+    </section>
+
+<section id="code_area">
 print("Hello World!")
-        </section>
-    </main>
+</section>
 
-    <!--푸터-->
-    <footer>
+</main>
+
+<!--푸터-->
+<footer>
         <pre class="footer_info">
 © 2022 All Rights Reserved.
 팀명: NL
 주소: 서울과학기술대학교 미래관 123호
 연락처: dlqudds1234@gmail.com</pre>
-    </footer>
+</footer>
 </body>
 </html>
