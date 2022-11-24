@@ -6,6 +6,7 @@
     <title>Programming Langs</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./main_grid.css">
 </head>
 
 <body>
@@ -22,31 +23,52 @@
             </ul>
         </nav>
     </header>
+
+
     <!--언어별 그리드-->
-    <section>
-        <ul class="lang_grid">
-            <li>
-                <a href="info_codes/info_js.html">
-                    <img src="./images/js_logo.png" alt="js logo image" />
-                    <div>JS</div>
-                    <div>"자스"</div>
-                </a>
-            </li>
-            <li>
-                <a href="info_codes/info_cpp.html">
-                    <img src="./images/cpp_logo.png" alt="cpp logo image">
-                    <div>C++</div>
-                    <div>"속도"</div>
-                </a>
-            </li>
-            <li>
-                <a href="info_codes/info_py.html">
-                    <img src="./images/py_logo.png" alt="python logo image">
-                    <div>Python</div>
-                    <div>"쉬움"</div>
-                </a>
-            </li>
-        </ul>
+    <section class="main_grid">
+        <main class="page-content">
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">C/C++</h2>
+                    <p class="copy">
+                        <!--마우스 올리면 보이는 내용-->
+                    </p>
+                    <a href="info_codes/info_cpp.html"><button class="btn">View Info</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Python</h2>
+                    <p class="copy">
+                        <!--마우스 올리면 보이는 내용-->
+                    </p>
+                    <a href="info_codes/info_py.html"><button class="btn">View Info</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Java</h2>
+                    <p class="copy">
+                        <!--마우스 올리면 보이는 내용-->
+                    </p>
+                    <a href="info_codes/info_java.html"><button class="btn">View Info</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">JavaScript</h2>
+                    <p class="copy"></p>
+                    <a href="info_codes/info_js.html"><button class="btn">View Info</button></a>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!--팀원 소개-->
+    <section class="introduction">
+        <h1>팀원 소개</h1>
+        <div></div>
 
     </section>
 
