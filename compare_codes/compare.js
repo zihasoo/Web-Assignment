@@ -13,3 +13,16 @@ changeColor.addEventListener("mouseout", (e) => {
     spanChange[i].classList.remove("add");
   }
 });
+
+let chartChange = document.querySelector("#arrow");
+let chart = document.querySelector("#chartBox");
+let table = document.querySelector(".compare_table");
+
+chartChange.addEventListener("mouseover", (e) => {
+  chart.style.display = "inline";
+  table.style.margin = "50px 20% 0px 0px";
+});
+chartChange.addEventListener("mouseout", (e) => {
+  chart.style.display = "none";
+  table.style.margin = "50px auto 0px";
+});

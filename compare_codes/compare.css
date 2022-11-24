@@ -101,3 +101,23 @@ footer .footer_info {
   padding: 3px 25px;
   line-height: 25px;
 }
+
+#chartBox {
+  position: relative;
+  width: 20%;
+  float: left;
+  top: 20px;
+  display: none;
+}
+
+#chartBox #chartImg {
+  width: 100%;
+}
+
+#chart li {
+  font-size: 20px;
+  text-align: center;
+}
+#arrow {
+  border: 3px solid blue;
+}
