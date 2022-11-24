@@ -29,6 +29,7 @@ main #characteristic {
     border: 1px solid black;
     height: 200px;
     margin: 10px 0;
+    line-height: 120%;
 }
 
 main #code_area {
