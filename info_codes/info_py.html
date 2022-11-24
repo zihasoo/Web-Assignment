@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Programming Langs</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-    <link rel="stylesheet" href="./info_style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+    <link rel="stylesheet" href="./info_style.css"/>
+    <link rel="stylesheet" href="/header_footer.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.5/ace.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', () =>
@@ -16,71 +17,59 @@
 </head>
 
 <body>
-    <!--네비게이션-->
+<!--네비게이션-->
+<header>
+    <a href="../index.html"><img src="/images/NL_logo.png" alt="메인 로고"/></a>
+    <nav>
+        <ul>
+            <li><a href="../compare_codes/compare.html">언어 비교</a></li>
+            <li><a href="info_cpp.html">C++</a></li>
+            <li><a href="info_py.html">Python</a></li>
+            <li><a href="info_java.html">Java</a></li>
+            <li><a href="info_js.html">JS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">메인 화면</a></li>
-                <li><a href="../lang_comp.html">언어 비교</a></li>
-                <li><a href="info_js.html">Java Script</a></li>
-                <li><a href="info_java.html">Java</a></li>
-                <li><a href="info_cpp.html">C++</a></li>
-                <li><a href="info_py.html">Python</a></li>
-            </ul>
-        </nav>
+        "Python"
     </header>
 
-    <main>
-        <header>
-            "Python"
-        </header>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/x7X9w_GIm1s" title="YouTube video player"
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/x7X9w_GIm1s" title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
-        <section id="history">
-            Python 의 역사
-        </section>
+    <section id="history">
+        Python 의 역사
+    </section>
 
-        </header>
+    <section id="characteristic">
+        Python 의 특징<br><br>
+        <ol>
+            <li>"아름다운 게 추한 것보다 낫다." (Beautiful is better than ugly)</li>
+            <li>"명시적인 것이 암시적인 것 보다 낫다." (Explicit is better than implicit)</li>
+            <li>"단순함이 복잡함보다 낫다." (Simple is better than complex)</li>
+            <li>"복잡함이 난해한 것보다 낫다." (Complex is better than complicated)</li>
+            <li>"가독성은 중요하다." (Readability counts)</li>
+        </ol>
+        라는 핵심 철학에 기반하여 만든 프로그래밍 언어입니다.
+    </section>
 
-        <main>
-            <section id="history">
-                Python 의 역사
+<section id="code_area">
+print("Hello World!")
+</section>
 
-            </section>
+</main>
 
-            <section id="characteristic">
-                Python 의 특징<br><br>
-                <ol>
-                    <li>"아름다운 게 추한 것보다 낫다." (Beautiful is better than ugly)</li>
-                    <li>"명시적인 것이 암시적인 것 보다 낫다." (Explicit is better than implicit)</li>
-                    <li>"단순함이 복잡함보다 낫다." (Simple is better than complex)</li>
-                    <li>"복잡함이 난해한 것보다 낫다." (Complex is better than complicated)</li>
-                    <li>"가독성은 중요하다." (Readability counts)</li>
-                </ol>
-                라는 핵심 철학에 기반하여 만든 프로그래밍 언어입니다.
-            </section>
-
-            <section id="characteristic">
-                Python 의 특징
-            </section>
-
-            <section id="code_area">
-                print("Hello World!")
-            </section>
-
-        </main>
-
-        <!--푸터-->
-        <footer>
+<!--푸터-->
+<footer>
             <pre class="footer_info">
 © 2022 All Rights Reserved.
 팀명: NL
 주소: 서울과학기술대학교 미래관 123호
 연락처: dlqudds1234@gmail.com</pre>
-        </footer>
+</footer>
 </body>
 
 </html>
