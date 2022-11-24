@@ -8,3 +8,8 @@ changeColor.addEventListener("mouseover", (e) => {
     spanChange[i].classList.add("add");
   }
 });
+changeColor.addEventListener("mouseout", (e) => {
+  for (let i = 0; i < spanChange.length; i++) {
+    spanChange[i].classList.remove("add");
+  }
+});
