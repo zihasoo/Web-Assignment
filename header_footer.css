@@ -21,6 +21,7 @@ header a img {
 header nav ul {
     display: flex;
     height: 100%;
+    position: relative;
 }
 
 header nav ul li {
@@ -29,6 +30,19 @@ header nav ul li {
     font-weight: bold;
     font-size: large;
     height: 100%;
+}
+
+header nav ul li::before{
+    content: "";
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 18px;
+    top: 18px;
+}
+
+header nav ul li:first-child::before{
+    display: none;
 }
 
 header nav ul li a {
