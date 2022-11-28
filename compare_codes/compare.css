@@ -4,7 +4,7 @@ caption {
   margin-bottom: 10px;
 }
 table {
-  width: 60%;
+  width: 100%;
   margin: 50px auto 0px;
   text-align: center;
   padding: 8px;
@@ -25,7 +25,7 @@ tr:nth-child(even) {
   background-color: aquamarine;
 }
 .box {
-  width: 60%;
+  width: 100%;
   margin: 30px auto;
 }
 .yellow.add {
@@ -53,3 +53,36 @@ h2 {
   line-height: 150%;
 }
 
+footer .footer_info {
+  background-color: #31353f;
+  color: grey;
+  padding: 3px 25px;
+  line-height: 25px;
+}
+
+#chartBox {
+  position: relative;
+  width: 20%;
+  float: left;
+  top: 20px;
+  display: none;
+}
+
+#chartBox #chartImg {
+  width: 100%;
+}
+
+#chart li {
+  font-size: 20px;
+  text-align: center;
+}
+#arrow {
+  border: 3px solid blue;
+}
+#arrow:hover {
+  color: red;
+}
+section {
+  width: 60%;
+  margin: 0 auto;
+}
