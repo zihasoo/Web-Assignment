@@ -33,12 +33,12 @@ header nav ul li {
 }
 
 header nav ul li::before{
-    position: absolute;
     content: "";
     width: 1px;
     background-color: black;
-    top: 18px;
+    position: absolute;
     bottom: 18px;
+    top: 18px;
 }
 
 header nav ul li:first-child::before{
