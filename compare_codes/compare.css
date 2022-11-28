@@ -86,3 +86,15 @@ section {
   width: 60%;
   margin: 0 auto;
 }
+ul li:nth-child(1) {
+  color: #448ff2;
+}
+ul li:nth-child(2) {
+  color: #f23838;
+}
+ul li:nth-child(3) {
+  color: #f29f05;
+}
+ul li:nth-child(4) {
+  color: #37a652;
+}
