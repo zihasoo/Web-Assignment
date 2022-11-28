@@ -7,7 +7,7 @@ a:visited {
     color: black;
 }
 
-header {
+body > header {
     display: flex;
     justify-content: space-around;
     padding: 15px;
