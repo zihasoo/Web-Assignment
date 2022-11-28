@@ -1,0 +1,50 @@
+#profile-section {
+  background-color: #f2f4f5;
+}
+
+.profile-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.reverse .profile-introduce-wrap div {
+  text-align: right;
+}
+
+.profile-introduce-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.profile-wrap {
+  height: 400px;
+}
+
+.profile-wrap .profile-introduce-wrap {
+  width: 40%;
+}
+
+.profile-wrap .profile-photo-wrap {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile-wrap .profile-photo-wrap .profile-photo {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.github {
+  cursor: pointer;
+}
+
+.github a svg:hover {
+  transition: 0.7s;
+  transform: scale(1.3);
+}
