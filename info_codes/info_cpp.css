@@ -12,6 +12,39 @@ main > header {
     border-bottom: 1px solid black;
 }
 
+@media (min-width: 1000px) {
+    body > aside {
+        width: 120px;
+        height: 200px;
+        position: fixed;
+        top: 200px;
+        left: 50px;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+}
+
+body > aside ul li {
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+body > aside ul li a{
+    font-weight: normal;
+    color: blue;
+}
+
+body > aside ul li a:visited{
+    color: blue;
+}
+
+body > aside ul li a:hover{
+    text-decoration: underline 1px blue;
+}
+
 main #summary {
     margin: 10px auto;
 }
