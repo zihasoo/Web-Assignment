@@ -51,6 +51,13 @@
             <header class="subtitle">
                 역사
             </header>
+            <article>
+                1979년, 덴마크의 컴퓨터 과학자 비야네 스트롭스트룹은 C++의 선구자격 언어인 "C with Classes" 작업에 착수하였다. 새로운 언어를 만들려는 의의는 박사 논문을 위한 스트롭스트룹의 프로그래밍 경험에서 비롯되었다.
+                처음에 스트롭스트룹의 "C with Classes"는 C 컴파일러에 클래스, 상속 클래스, 스트롱 타이핑, 인라인 확장, 기본 인수를 포함한 여러 기능들을 추가하였다.
+                1983년, "C with Classes"라는 이름은 가상 함수, 함수 이름, 연산자 오버로딩, 참조, 제약조건, type-safe free-store 메모리 할당 (new/delete), 개선된 자료형 검사, BCPL 스타일의 1줄 코멘트(//)를 포함한 새로운 기능들을 추가하면서 "C++"로 변경되었다.
+                1985년 C++ 프로그래밍 언어 제1판이 출시되었으며 당시 공식표준이 없었기 때문에 이 언어의 절대적인 참조 문헌이 되었다. 최초의 C++ 상용 구현체는 같은 해 10월에 출시되었다.
+                이후 인기가 급증하며 1991년부터 ISO에서 표준화 작업이 시작되었고 1998년도에 첫 공식 표준인 C++98이 탄생하게 되었다.
+            </article>
         </section>
 
         <section id="characteristic">
@@ -58,17 +65,32 @@
                 특징
             </header>
             <ul>
-                <li>컴파일러를 고문해서 최대한의 실행 시간 이점을 만들어낸다.</li>
+                <li>C, 객체지향, 템플릿, STL의 4가지 하위 개념의 연합체로 이루어졌다고 볼 수 있다.</li>
+                <li>메모리를 수동으로 관리해야 한다. 이것 때문에 기피되는 경우가 매우 많다.</li>
+                <li>"무비용 추상화"라는 것을 설계 철학으로 하고 있다. 이 덕에 고수준 기능을 지원하면서도 매우 뛰어난 성능을 자랑한다.</li>
+                <li>지원하는 기능이 매우 많다. 그만큼 문법이 복잡하다.</li>
+                <li>런타임을 극한으로 만들기 위해 컴파일 타임을 많이 희생한다.</li>
+                <li>다른 언어의 일반화 프로그래밍 기능인 제네릭과는 다르게, 템플릿에는 타입이 아닌 인수도 들어갈 수 있기 때문에 이를 적절히 이용해 "템플릿 메타 프로그래밍"이라는 강력한 개념을 사용할 수 있다.</li>
             </ul>
         </section>
 
-        <section id="code_area">
-            #include&ltiostream&gt
+        <section>
+            <header class="subtitle">
+                코딩 해보기
+            </header>
+            <div id="code_area">
+#include&ltiostream&gt
 
-            using namespace std;
+using namespace std;
 
-            int main(){
-            cout << "Hello World!\n" ; return 0; } </section>
+int main(){
+
+    cout << "Hello World!\n";
+
+    return 0;
+}
+</div>
+        </section>
 
     </main>
 
