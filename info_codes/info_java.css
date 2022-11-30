@@ -1,0 +1,30 @@
+main {
+  width: 60%;
+  margin: 50px auto;
+}
+
+main > header {
+  font-size: 50px;
+  font-family: serif;
+  color: red;
+  text-shadow: -3px 0px 2px black;
+}
+
+main #box {
+  width: 100%;
+}
+
+#box > iframe {
+  display: inline-block;
+}
+
+#box > #outline {
+  display: inline-block;
+}
+
+main #code_area {
+  font-size: medium;
+  max-width: 4000px;
+  height: 540px;
+  resize: vertical;
+}

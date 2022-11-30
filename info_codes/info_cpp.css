@@ -1,7 +1,6 @@
-
 main {
-    width: 60%;
-    margin: 50px auto;
+  width: 60%;
+  margin: 50px auto;
 }
 
 main > header {
@@ -82,8 +81,8 @@ main #characteristic ul li {
 }
 
 main #code_area {
-    font-size: medium;
-    max-width: 4000px;
-    height: 540px;
-    resize: vertical;
+  font-size: medium;
+  max-width: 4000px;
+  height: 540px;
+  resize: vertical;
 }
