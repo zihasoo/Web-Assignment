@@ -21,7 +21,6 @@ main > header {
         font-size: larger;
         font-weight: bold;
     }
-
 }
 
 body > aside ul li {
@@ -60,8 +59,8 @@ main #summary #summary_content {
 main .subtitle {
     font-size: x-large;
     font-weight: bold;
-    margin: 25px 0;
-    padding: 15px 0;
+    margin: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid black;
 }
 
