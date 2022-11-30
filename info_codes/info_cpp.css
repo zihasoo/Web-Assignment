@@ -77,10 +77,8 @@ main #characteristic {
 
 main #characteristic ul li {
     line-height: 30px;
-}
-
-main #characteristic ul li::before{
-    content: "• ";
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 main #code_area {
