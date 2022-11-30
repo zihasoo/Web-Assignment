@@ -26,3 +26,14 @@ chartChange.addEventListener("mouseout", (e) => {
   chart.style.display = "none";
   table.style.margin = "50px auto 0px";
 });
+
+let etc = document.querySelector("#extra");
+etc.style.color = "black";
+
+etc.addEventListener("click", (e) => {
+  if (etc.style.color === "black") {
+    etc.style.color = "blue";
+  } else {
+    etc.style.color = "black";
+  }
+});
