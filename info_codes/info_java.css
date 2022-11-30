@@ -15,6 +15,9 @@ main #summary #summary_content {
   display: inline;
   line-height: 25px;
 }
+main #summary #summary_content b {
+  font-weight: bold;
+}
 
 main header {
   font-size: xxx-large;
