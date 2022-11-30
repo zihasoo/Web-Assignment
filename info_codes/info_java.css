@@ -21,11 +21,10 @@ main #box {
   display: inline-block;
 }
 
-#box > #outline {
+#box #outline {
   display: inline-block;
-}
-#outline > ul {
-  padding: 100px;
+  width: 100px;
+  margin: 0 auto;
 }
 
 main #code_area {
