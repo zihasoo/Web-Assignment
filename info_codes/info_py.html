@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Programming Langs</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-    <link rel="stylesheet" href="./info_py_style.css" />
+    <link rel="stylesheet" href="./info_py.css">
     <link rel="stylesheet" href="../header_footer.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.5/ace.js"></script>
     <script>
@@ -30,57 +30,80 @@
             </ul>
         </nav>
     </header>
-
- 
+    
+    <aside>
+        <ul>
+            <li>목차</li>
+            <li><a href="#summary">개요</a></li>
+            <li><a href="#history">역사</a></li>
+            <li><a href="#characteristic">특징</a></li>
+            <li><a href="#proscons">장단점</a></li>
+            <li><a href="#code_area">코딩</a></li>
+        </ul>
+    </aside>
     
     <main>
         <header>
             "Python"
         </header>
-        
-        <aside class="tableofcontents">
-            <div><a href="#history">Python 의 역사</a></div>
-            <div><a href="#characteristic">Python 의 특징</a></div>
-            <div><a href="#pros">Python 의 장점</a></div>
-            <div><a href="#cons">Python 의 단점</a></div>
-        </aside>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/x7X9w_GIm1s" title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
-        <section id="history">
-            Python 의 역사<br><br>
-            파이썬은 1908년대 프로그래머 반 로섬이 크리스마스가 있던 주, 연구실이 닫혀 심심했던 차에 연구실이 닫혀 할 것이 없어 심심했던 차에 만들기 시작했던 프로그래밍 언어이고 파이썬이라는 프로그래밍 언어의 이름은 몬티 파이썬이라는 프로그램에서 따온 이름이라고 합니다.<br><br>
-            파이썬 2.0버전이 2000년에 등장하며 2008년에 3.0 버전이 등장하며 여러 차례의 업데이트에 걸쳐 가장 인기 있는 프로그래밍 언어로 등극하게 되었습니다. 현재 우리가 사용하고 있는 파이썬은 Python 3.11.0입니다.
-        </section>
     
-        <section id="characteristic">
-            Python 의 특징<br><br>
-            <ol>
-                <li>"아름다운 게 추한 것보다 낫다." (Beautiful is better than ugly)</li>
-                <li>"명시적인 것이 암시적인 것 보다 낫다." (Explicit is better than implicit)</li>
-                <li>"단순함이 복잡함보다 낫다." (Simple is better than complex)</li>
-                <li>"복잡함이 난해한 것보다 낫다." (Complex is better than complicated)</li>
-                <li>"가독성은 중요하다." (Readability counts)</li>
-            </ol>
-            라는 핵심 철학에 기반하여 만든 프로그래밍 언어입니다.
+        <section id="summary">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x7X9w_GIm1s" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    <div id="summary_content">
+                        20세기 말 등장한 프로그래밍 언어로 각 플랫폼에 독립적이며 인터프리터식, 객체지향적, 동적 타이핑 대화형 프로그래밍 언어이다.
+                    </div>
         </section>
-        
-        <section id="pros">
-            Python 의 장점<br><br>
-            1. 비전공자도 배우기 쉽습니다. C언어는 문법이 복잡하여 전공자도 다루기 어려워하는 반면 파이썬은 단순한 문법을 가지기 때문에 비전공자도 배우기 쉽습니다.<br>
-            2. 다양한 분야에서 활용할 수 있습니다. 기본적인 데스크톱 애플리케이션에서 멈추지 않고 웹서버, 해킹도구, IoT, 인공지능 등 널리 활용될 수 있습니다.<br>
-            3. 대부분의 운영 체제에서 동일하게 사용할 수 있습니다. C언어 등의 프로그래밍 언어는 운영체제가 제한적이며 여러 운영체제에서 사용될 수 있어도 그 사용 방법에 있어 차이점이 존재합니다. 그러나 파이썬은 모든 운영체제에서 같은 방법으로 사용할 수 있습니다.</li>
-        </section>
-        <section id="cons">
-            Python 의 단점<br><br>
-            느립니다. 쉽게 사용할 수 있는 만큼 그 속도가 다른 프로그래밍 언어에 비해 10~350배 느립니다.<br><br>
-            이러한 단점은 현재 컴퓨터 부품의 발전으로 연산을 많이 필요로 하는 애플리케이션에서 사용하는 것이 아니라면 큰 속도 차이를 느끼지 못하기 때문에 사용 난이도가 쉬운 파이썬, 자바스크립트, 루비가 큰 인기를 끌고 있습니다.
+        <section id="history">
+            <header class="subtitle">Python 의 역사</header>
+                <article>
+                    파이썬은 1908년대 프로그래머 반 로섬이 크리스마스가 있던 주, 연구실이 닫혀 심심했던 차에 연구실이 닫혀 할 것이 없어 심심했던 차에 만들기 시작했던 프로그래밍 언어이고 파이썬이라는 프로그래밍 언어의 이름은 몬티 파이썬이라는 프로그램에서 따온 이름이라고 한다.<br><br>
+                    파이썬 2.0버전이 2000년에 등장하며 2008년에 3.0 버전이 등장하며 여러 차례의 업데이트에 걸쳐 가장 인기 있는 프로그래밍 언어로 등극하게 되었다. 현재 우리가 사용하고 있는 파이썬은 Python 3.11.0이다.
+                </article>
         </section>
 
-        <section id="code_area">
-            print("Hello World!")
+        <section id="characteristic">
+            <header class="subtitle">
+                특징
+            </header>
+            <article>
+                <ul>
+                    <li>"아름다운 게 추한 것보다 낫다." (Beautiful is better than ugly)</li>
+                    <li>"명시적인 것이 암시적인 것 보다 낫다." (Explicit is better than implicit)</li>
+                    <li>"단순함이 복잡함보다 낫다." (Simple is better than complex)</li>
+                    <li>"복잡함이 난해한 것보다 낫다." (Complex is better than complicated)</li>
+                    <li>"가독성은 중요하다." (Readability counts)</li>
+                </ul>
+                <br>라는 핵심 철학에 기반하여 만든 프로그래밍 언어이다.
+            </article>
+        </section>
+
+        <section id="proscons">
+            <header class="subtitle">
+                장점과 단점
+            </header>
+            <article>
+                Python의 장점
+                <ul>
+                    <li>비전공자도 배우기 쉽다. C언어는 문법이 복잡하여 전공자도 다루기 어려워하는 반면 파이썬은 단순한 문법을 가지기 때문에 비전공자도 배우기 쉽다.</li>
+                    <li>다양한 분야에서 활용할 수 있다. 기본적인 데스크톱 애플리케이션에서 멈추지 않고 웹서버, 해킹도구, IoT, 인공지능 등 널리 활용될 수 있다.</li>
+                    <li>대부분의 운영 체제에서 동일하게 사용할 수 있다. C언어 등의 프로그래밍 언어는 운영체제가 제한적이며 여러 운영체제에서 사용될 수 있어도 그 사용 방법에 있어 차이점이 존재한다. 그러나 파이썬은 모든 운영체제에서 같은 방법으로 사용할 수 있다.</li>
+                </ul><br>
+                Python의 단점
+                <ul>
+                    <li>느리다. 쉽게 사용할 수 있는 만큼 그 속도가 다른 프로그래밍 언어에 비해 10~350배 느리다.</li>
+                </ul>
+            </article>
+        </section>
+        
+        <section>
+            <header class="subtitle">
+                코딩 해보기
+            </header>
+            <div id="code_area">
+                print("Hello World!")
+            </div>
         </section>
     </main>
 
