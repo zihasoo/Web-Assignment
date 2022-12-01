@@ -1,6 +1,10 @@
 #profile-section {
-  padding: 30px 0 0 0;
   background-color: #f2f4f5;
+}
+
+#profile-section {
+  margin-top: 50px;
+  padding-top: 50px;
 }
 
 h2 {
@@ -9,10 +13,16 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 170%;
+  margin-bottom: 10px;
+}
+
 .profile-wrap {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 50px 0;
 }
 
 .reverse .profile-introduce-wrap div {

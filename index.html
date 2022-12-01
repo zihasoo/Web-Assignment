@@ -1,234 +1,260 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Programming Langs</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-    <link rel="stylesheet" href="./main_style.css" />
-    <link rel="stylesheet" href="./main_grid.css">
-    <link rel="stylesheet" href="./header_footer.css">
-    <link rel="stylesheet" href="./profile.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./main_style.css"/>
+    <link rel="stylesheet" href="./main_grid.css"/>
+    <link rel="stylesheet" href="./header_footer.css"/>
+    <link rel="stylesheet" href="./profile.css"/>
 </head>
 
 <body>
-    <!--네비게이션-->
-    <header>
-        <a href="index.html"><img src="images/NL_logo.png" alt="메인 로고" /></a>
-        <nav>
-            <ul>
-                <li><a href="compare_codes/compare.html">언어 비교</a></li>
-                <li><a href="info_codes/info_cpp.html">C++</a></li>
-                <li><a href="info_codes/info_py.html">Python</a></li>
-                <li><a href="info_codes/info_java.html">Java</a></li>
-                <li><a href="info_codes/info_js.html">JS</a></li>
-            </ul>
-        </nav>
-    </header>
+<!--네비게이션-->
+<header>
+    <a href="index.html"><img src="images/NL_logo.png" alt="메인 로고"/></a>
+    <nav>
+        <ul>
+            <li><a href="compare_codes/compare.html">언어 비교</a></li>
+            <li><a href="info_codes/info_cpp.html">C++</a></li>
+            <li><a href="info_codes/info_py.html">Python</a></li>
+            <li><a href="info_codes/info_java.html">Java</a></li>
+            <li><a href="info_codes/info_js.html">JS</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="title">
-        프로그래밍 언어 정보 사이트
-    </section>
+<section id="title">
+    프로그래밍 언어 정보 사이트
+</section>
 
-    <!--언어별 그리드-->
-    <section class="main_grid">
-        <main class="page-content">
-            <div class="card">
-                <div class="content">
-                    <h2 class="title">C/C++</h2>
-                    <p class="copy">
-                        <!--마우스 올리면 보이는 내용-->
-                        "속도"
-                    </p>
-                    <a href="info_codes/info_cpp.html">
-                        <button class="btn">View Info</button>
+<!--언어별 그리드-->
+<section class="main_grid">
+    <main class="page-content">
+        <div class="card">
+            <div class="content">
+                <h2 class="title">C/C++</h2>
+                <p class="copy">
+                    <!--마우스 올리면 보이는 내용-->
+                    "속도"
+                </p>
+                <a href="info_codes/info_cpp.html">
+                    <button class="btn">View Info</button>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2 class="title">Python</h2>
+                <p class="copy">
+                    <!--마우스 올리면 보이는 내용-->
+                    "쉬움"
+                </p>
+                <a href="info_codes/info_py.html">
+                    <button class="btn">View Info</button>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2 class="title">Java</h2>
+                <p class="copy">
+                    <!--마우스 올리면 보이는 내용-->
+                    "스프링"
+                </p>
+                <a href="info_codes/info_java.html">
+                    <button class="btn">View Info</button>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2 class="title">JavaScript</h2>
+                <p class="copy">
+                    <!--마우스 올리면 보이는 내용-->
+                    "자스"
+                </p>
+                <a href="info_codes/info_js.html">
+                    <button class="btn">View Info</button>
+                </a>
+            </div>
+        </div>
+    </main>
+</section>
+
+<!--팀원 소개-->
+<section id="profile-section">
+    <h2>팀원 소개</h2>
+    <div class="profile-wrap">
+        <div class="profile-introduce-wrap">
+            <div>
+                <h3>한줄 소개</h3>
+                <p>
+                    디자인을 잘하고 싶은 컴공 20살 이병윤입니다. 알고리즘 좋아하고
+                    프론트 열심히 공부중입니다
+                </p>
+            </div>
+            <div>
+                <h3>맡은 역할</h3>
+                <p>
+                    사이트 기획, 네비게이션/푸터, C++ 언어 소개 창 제작 역할을
+                    맡았습니다
+                </p>
+            </div>
+            <div>
+                <h3>주력언어</h3>
+                <p>C++ / C# / Python / Dart</p>
+            </div>
+            <div class="link">
+                <div class="github">
+                    <a href="https://github.com/zihasoo" target="_blank">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                viewBox="0 0 24 24"
+                        >
+                            <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
                     </a>
                 </div>
             </div>
-            <div class="card">
-                <div class="content">
-                    <h2 class="title">Python</h2>
-                    <p class="copy">
-                        <!--마우스 올리면 보이는 내용-->
-                        "쉬움"
-                    </p>
-                    <a href="info_codes/info_py.html">
-                        <button class="btn">View Info</button>
+        </div>
+        <div class="profile-photo-wrap">
+            <div id="byeongyun" class="profile-photo"></div>
+            <p>병윤</p>
+        </div>
+    </div>
+    <div class="reverse profile-wrap">
+        <div class="profile-photo-wrap">
+            <div id="jaeyoon" class="profile-photo"></div>
+            <p>재윤</p>
+        </div>
+        <div class="profile-introduce-wrap">
+            <div>
+                <h3>한줄 소개</h3>
+                <p>안녕하세요 20살 컴퓨터공학과 22101187 심재윤입니다</p>
+            </div>
+            <div>
+                <h3>맡은 역할</h3>
+                <p>언어 비교페이지 제작과 Java페이지를 맡았습니다</p>
+            </div>
+            <div>
+                <h3>주력언어</h3>
+                <p>C/C++</p>
+            </div>
+            <div class="link">
+                <div class="github">
+                    <a href="https://github.com/simsgood2" target="_blank">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                viewBox="0 0 24 24"
+                        >
+                            <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
                     </a>
                 </div>
             </div>
-            <div class="card">
-                <div class="content">
-                    <h2 class="title">Java</h2>
-                    <p class="copy">
-                        <!--마우스 올리면 보이는 내용-->
-                        "스프링"
-                    </p>
-                    <a href="info_codes/info_java.html">
-                        <button class="btn">View Info</button>
+        </div>
+    </div>
+    <div class="profile-wrap">
+        <div class="profile-introduce-wrap">
+            <div>
+                <h3>한줄 소개</h3>
+                <p>
+                    21101181 문석준 서울과학기술대학교 컴퓨터공학과 2학년
+                    코딩어린이입니다!
+                </p>
+            </div>
+            <div>
+                <h3>맡은 역할</h3>
+                <p>언어 그리드와 파이썬 정보페이지 제작을 맡았습니다</p>
+            </div>
+            <div>
+                <h3>주력언어</h3>
+                <p>Python, C++</p>
+            </div>
+            <div class="link">
+                <div class="github">
+                    <a href="#">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                viewBox="0 0 24 24"
+                        >
+                            <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
                     </a>
                 </div>
             </div>
-            <div class="card">
-                <div class="content">
-                    <h2 class="title">JavaScript</h2>
-                    <p class="copy">
-                        <!--마우스 올리면 보이는 내용-->
-                        "자스"
-                    </p>
-                    <a href="info_codes/info_js.html">
-                        <button class="btn">View Info</button>
+        </div>
+        <div class="profile-photo-wrap">
+            <div id="seokjun" class="profile-photo"></div>
+            <p>석준</p>
+        </div>
+    </div>
+    <div class="reverse profile-wrap">
+        <div class="profile-photo-wrap">
+            <div id="seoungjun" class="profile-photo"></div>
+            <p>성준</p>
+        </div>
+        <div class="profile-introduce-wrap">
+            <div>
+                <h3>한줄 소개</h3>
+                <p>안녕하세요! node 백엔드 개발자가 되고 싶은 서성준입니다</p>
+            </div>
+            <div>
+                <h3>맡은 역할</h3>
+                <p>
+                    팀원 소개 컴포넌트와 자바스크립트 언어 설명 페이지 제작을
+                    맡았습니다
+                </p>
+            </div>
+            <div>
+                <h3>주력언어</h3>
+                <p>Js/typescript, java, C/C++</p>
+            </div>
+            <div class="link">
+                <div class="github">
+                    <a href="https://github.com/seo-seoungjun">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                viewBox="0 0 24 24"
+                        >
+                            <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
                     </a>
                 </div>
             </div>
-        </main>
-    </section>
+        </div>
+    </div>
+</section>
 
-    <!--팀원 소개-->
-    <section id="profile-section">
-        <h2>팀원 소개</h2>
-        <div class="profile-wrap">
-            <div class="profile-introduce-wrap">
-                <div>
-                    <h3>한줄 소개</h3>
-                    <p>
-                        디자인을 잘하고 싶은 컴공 20살 이병윤입니다. 알고리즘 좋아하고
-                        프론트 열심히 공부중입니다
-                    </p>
-                </div>
-                <div>
-                    <h3>맡은 역할</h3>
-                    <p>
-                        사이트 기획, 네비게이션/푸터, C++ 언어 소개 창 제작 역할을
-                        맡았습니다
-                    </p>
-                </div>
-                <div>
-                    <h3>주력언어</h3>
-                    <p>C++ / C# / Python / Dart</p>
-                </div>
-                <div class="link">
-                    <div class="github">
-                        <a href="https://github.com/zihasoo" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="profile-photo-wrap">
-                <div id="byeongyun" class="profile-photo"></div>
-                <p>병윤</p>
-            </div>
-        </div>
-        <div class="reverse profile-wrap">
-            <div class="profile-photo-wrap">
-                <div id="jaeyoon" class="profile-photo"></div>
-                <p>재윤</p>
-            </div>
-            <div class="profile-introduce-wrap">
-                <div>
-                    <h3>한줄 소개</h3>
-                    <p>안녕하세요 20살 컴퓨터공학과 22101187 심재윤입니다</p>
-                </div>
-                <div>
-                    <h3>맡은 역할</h3>
-                    <p>언어 비교페이지 제작과 Java페이지를 맡았습니다</p>
-                </div>
-                <div>
-                    <h3>주력언어</h3>
-                    <p>C/C++</p>
-                </div>
-                <div class="link">
-                    <div class="github">
-                        <a href="https://github.com/simsgood2" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="profile-wrap">
-            <div class="profile-introduce-wrap">
-                <div>
-                    <h3>한줄 소개</h3>
-                    <p>
-                        21101181 문석준 서울과학기술대학교 컴퓨터공학과 2학년
-                        코딩어린이입니다!
-                    </p>
-                </div>
-                <div>
-                    <h3>맡은 역할</h3>
-                    <p>언어 그리드와 파이썬 정보페이지 제작을 맡았습니다</p>
-                </div>
-                <div>
-                    <h3>주력언어</h3>
-                    <p>Python, C++</p>
-                </div>
-                <div class="link">
-                    <div class="github">
-                        <a href="https://github.com/EarthRabbit" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="profile-photo-wrap">
-                <div id="seokjun" class="profile-photo"></div>
-                <p>석준</p>
-            </div>
-        </div>
-        <div class="reverse profile-wrap">
-            <div class="profile-photo-wrap">
-                <div id="seoungjun" class="profile-photo"></div>
-                <p>성준</p>
-            </div>
-            <div class="profile-introduce-wrap">
-                <div>
-                    <h3>한줄 소개</h3>
-                    <p>안녕하세요! node 백엔드 개발자가 되고 싶은 서성준입니다</p>
-                </div>
-                <div>
-                    <h3>맡은 역할</h3>
-                    <p>
-                        팀원 소개 컴포넌트와 자바스크립트 언어 설명 페이지 제작을
-                        맡았습니다
-                    </p>
-                </div>
-                <div>
-                    <h3>주력언어</h3>
-                    <p>Js/typescript, java, C/C++</p>
-                </div>
-                <div class="link">
-                    <div class="github">
-                        <a href="https://github.com/seo-seoungjun" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--푸터-->
-    <footer>
-        <pre class="footer_info">
+<!--푸터-->
+<footer>
+      <pre class="footer_info">
 © 2022 All Rights Reserved.
 팀명: NL
 주소: 서울과학기술대학교 미래관 123호
-연락처: dlqudds1234@gmail.com</pre>
-    </footer>
+연락처: dlqudds1234@gmail.com</pre
+      >
+</footer>
 </body>
-
 </html>
