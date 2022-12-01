@@ -4,34 +4,64 @@ caption {
     margin-bottom: 10px;
 }
 
+section {
+    width: 60%;
+    margin: 50px auto 0px;
+}
+
 .compare_table {
     width: 100%;
-    margin: 50px auto 0px;
+    margin: 10px auto 0px;
     text-align: center;
     padding: 8px;
     background-color: antiquewhite;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
 }
 
-th {
-    font-size: 25px;
-    border: 1px solid black;
-    padding: 10px;
+.compare_table tr {
+    display: flex;
 }
 
-td {
-    padding: 10px;
+.compare_table th {
+    font-size: larger;
     border: 1px solid black;
-    font-size: 20px;
+    padding: 10px;
+    flex: 1;
 }
 
-tr:nth-child(even) {
+.compare_table td {
+    font-size: large;
+    border: 1px solid black;
+    padding: 10px;
+    flex: 1;
+}
+
+.compare_table tr:nth-child(even) {
     background-color: aquamarine;
+}
+
+.compare_table #arrow {
+    cursor: pointer;
+    box-shadow: 0 0 0 2px blue inset;
+}
+
+.compare_table #arrow:hover {
+    color: red;
+}
+
+#etc_compare {
+    margin: 15px 0;
+}
+
+#etc_compare #extra {
+    font-size: large;
+    cursor: pointer;
 }
 
 .box {
     width: 100%;
     margin: 30px auto;
+    line-height: 25px;
 }
 
 .yellow.add {
@@ -39,40 +69,25 @@ tr:nth-child(even) {
 }
 
 h2 {
-    font-size: 35px;
-}
-
-.box .interpret {
-    font-size: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
 }
 
 .box .interpret p {
     margin-bottom: 10px;
-    line-height: 150%;
 }
 
 .box .compile {
-    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    line-height: 150%;
-}
-
-.box #build {
-    font-size: 20px;
-    line-height: 150%;
-}
-
-footer .footer_info {
-    background-color: #31353f;
-    color: grey;
-    padding: 3px 25px;
-    line-height: 25px;
 }
 
 #chartBox {
     position: relative;
-    width: 20%;
+    width: 19%;
     float: left;
     top: 20px;
     display: none;
@@ -86,19 +101,6 @@ footer .footer_info {
     font-size: 20px;
     margin: 0 auto;
     width: 120px;
-}
-
-#arrow {
-    border: 3px solid blue;
-}
-
-#arrow:hover {
-    color: red;
-}
-
-section {
-    width: 60%;
-    margin: 0 auto;
 }
 
 ul li:nth-child(1) {

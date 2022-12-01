@@ -1,67 +1,230 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Programming Langs</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-    <link rel="stylesheet" href="./info_style.css" />
-    <link rel="stylesheet" href="../header_footer.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./info_js.css"/>
+    <link rel="stylesheet" href="../header_footer.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.5/ace.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', () =>
-            ace.edit(document.getElementById("code_area"), {
-                mode: "ace/mode/javascript"
-            }));
+            ace.edit(document.getElementById('code_area'), {
+                mode: 'ace/mode/javascript',
+            })
+        );
     </script>
 </head>
 
 <body>
-    <!--네비게이션-->
-    <header>
-        <a href="../index.html"><img src="../images/NL_logo.png" alt="메인 로고" /></a>
-        <nav>
-            <ul>
-                <li><a href="../compare_codes/compare.html">언어 비교</a></li>
-                <li><a href="info_cpp.html">C++</a></li>
-                <li><a href="info_py.html">Python</a></li>
-                <li><a href="info_java.html">Java</a></li>
-                <li><a href="info_js.html">JS</a></li>
-            </ul>
-        </nav>
-    </header>
+<!--네비게이션-->
+<header>
+    <a href="../index.html"
+    ><img src="../images/NL_logo.png" alt="메인 로고"
+    /></a>
+    <nav>
+        <ul>
+            <li><a href="../compare_codes/compare.html">언어 비교</a></li>
+            <li><a href="info_cpp.html">C++</a></li>
+            <li><a href="info_py.html">Python</a></li>
+            <li><a href="info_java.html">Java</a></li>
+            <li><a href="info_js.html">JS</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <header>
-            "Javascript"
-        </header>
+<aside>
+    <ul>
+        <li>목차</li>
+        <li><a href="#history">역사</a></li>
+        <li><a href="#characteristic">특징</a></li>
+        <li><a href="#framework">프레임워크</a></li>
+        <li><a href="#code_area">코딩</a></li>
+    </ul>
+</aside>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DHjqpvDnNGE" title="YouTube video player"
+<main>
+    <h1>Javascript</h1>
+    <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/DHjqpvDnNGE"
+            title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            allowfullscreen
+    ></iframe>
+    <section>
+        <p>
+            자바스크립트(JavaScript)는 객체(object) 기반의 스크립트
+            언어로,'웹페이지에 생동감을 불어넣기 위해' 만들어진 프로그래밍
+            언어입니다. HTML로는 웹의 내용을 작성하고, CSS로는 웹을 디자인하며,
+            자바스크립트로는 웹의 동작을 구현할 수 있습니다. 자바스크립트는 주로
+            웹 브라우저에서 사용되나, Node.js와 같은 프레임워크를 사용하면 서버 측
+            프로그래밍에서도 사용할 수 있습니다. 현재 컴퓨터나 스마트폰 등에
+            포함된 대부분의 웹 브라우저에는 자바스크립트 인터프리터가 내장되어
+            있습니다.
+        </p>
+    </section>
+    <section id="history">
+        <h2>JS 의 역사</h2>
+        <p>
+            첫 탄생은 1995년 넷스케이프에서 근무하던 브랜든 아이크가 10일만에
+            설계한 것으로부터 시작합니다. 처음에는 Mocha라는 이름이었지만 4달 만에
+            LiveScript라는 이름으로 개명하고 다시 3달 후에는 JavaScript라는 이름이
+            되어 오늘날까지 이어지고 있습니다. 이렇게 탄생한 자바스크립트는 현재
+            모든 브라우저의 표준 프로그래밍 언어가 되었습니다.
+        </p>
+        <p>
+            초창기 자바스크립트는 웹 페이지의 보조적인 기능을 수행하기 위해
+            한정적인 용도로 사용되었다. 이 시기에 대부분 로직은 주로 웹 서버에서
+            실행되었고 브라우저는 서버로부터 전달받은 HTML과 CSS를 단순히
+            렌더링하는 수준이었다.
+        </p>
+        <p>
+            1999년, 자바스크립트를 이용해서 비동기적(Asynchronous)으로 서버와
+            브라우저가 데이터를 교환할 수 있는 통신 기능인 Ajax(Asynchronous
+            JavaScript and XML)가 XMLHttpRequest이라는 이름으로 등장했다.
+        </p>
+        <p>
+            2006년, jQuery의 등장으로 다소 번거롭고 논란이 있던 DOM(Document
+            Object Model)을 보다 쉽게 제어할 수 있게 되었고 크로스 브라우징 이슈도
+            어느 정도 해결되었다. jQuery는 넓은 사용자 층을 순식간에 확보했다.
+            이로 인해 당시 다소 까다로운 자바스크립트보다 배우기 쉽고 직관적인
+            jQuery를 더 선호하는 개발자가 양산되기도 했다.
+        </p>
+        <p>
+            Google Maps를 통해 가능성이 확인된 자바스크립트로 웹 애플리케이션을
+            구축하려는 시도가 늘어가면서 보다 빠르게 동작하는 자바스크립트 엔진이
+            요구되었다. 2008년 등장한 구글의 V8 자바스크립트 엔진은 이러한 요구에
+            부합하는 빠른 성능을 보여 주었다. V8 자바스크립트 엔진의 등장으로
+            자바스크립트는 데스크톱 애플리케이션과 유사한 사용자 경험(user
+            experience)을 제공할 수 있는 웹 애플리케이션 개발 프로그래밍 언어로
+            정착하게 되었다. V8 자바스크립트 엔진으로 촉발된 자바스크립트의
+            발전으로 말마암아 과거 웹 서버에서 수행되던 역할들이
+            클라이언트(브라우저)로 이동하였고, 이로써 웹 애플리케이션에서
+            프런트엔드 영역이 주목받는 계기가 되었다.
+        </p>
+        <p>
+            2009년, 브라우저에서만 동작하던 자바스크립트를 브라우저 이외의
+            환경에서 동작시킬 수 있는 자바스크립트 실행 환경인 Node.js의 등장으로
+            자바스크립트는 웹 브라우저를 벗어나 서버 사이드 애플리케이션
+            개발에서도 사용되는 범용 프로그래밍 언어가 되었다. 웹 브라우저에서만
+            동작하는 반쪽짜리 프로그래밍 언어 취급을 받던 자바스크립트는 이제
+            프런트엔드 영역은 물론 백엔드 영역까지 아우르는 웹 프로그래밍 언어의
+            표준으로 자리잡고 있다.
+        </p>
+    </section>
+    <section id="characteristic">
+        <h2>JS 의 특징</h2>
+        <ol>
+            <li>
+                <details open>
+                    <summary>1. 인터프리터 언어</summary>
+                    <p>
+                        자바스크립트는 개발자가 별도의 컴파일 작업을 수행하지 않는
+                        인터프리터 언어(Interpreter language)이다. <br/>인터프리터는
+                        소스코드를 즉시 실행하고 컴파일러는 빠르게 동작하는 머신 코드를
+                        생성하고 최적화한다. 이를 통해 컴파일 단계에서 추가적인 시간이
+                        필요함에도 불구하고 보다 빠른 코드의 실행이 가능하다.
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details open>
+                    <summary>2. 멀티 패러다임 프로그래밍 언어</summary>
+                    <p>
+                        자바스크립트는 명령형(imperative), 함수형(functional),
+                        프로토타입 기반(prototype-based) 객체지향 프로그래밍을 지원하는
+                        멀티 패러다임 프로그래밍 언어다.
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details open>
+                    <summary>3. 동적 타입 언어</summary>
+                    <p>
+                        변수 타입이 없기 때문에, 프로그램 실행 도중 변수에 저장되는
+                        데이터 타입이 동적으로 바뀔 수 있다
+                    </p>
+                </details>
+            </li>
+        </ol>
+    </section>
+    <section id="framework">
+        <h2>JS 의 다양한 프레임워크</h2>
+        <div class="framework-wrap">
+            <div class="framework-content">
+                <div>
+                    <p>Facebook에서 개발한 UI 라이브러리</p>
+                </div>
+                <div id="react" class="thumbnail"></div>
+            </div>
+            <div class="framework-content">
+                <div>
+                    <p>React, Node.js 기반 프레임워크</p>
+                    <p>
+                        SSR(server-side rendering)과 SEO(search engine optimization) 등,
+                        React만으로는 해결하기 어려운 문제들을 해결하기 위해 만들어진
+                        프레임워크
+                    </p>
+                </div>
+                <div id="next" class="thumbnail"></div>
+            </div>
+            <div class="framework-content">
+                <div>
+                    <p>Node.js에서 동작하는 서버 프레임워크</p>
+                </div>
+                <div id="express" class="thumbnail"></div>
+            </div>
+            <div class="framework-content">
+                <div>
+                    <p>(Node.js 기반) 서버 프레임워크</p>
+                    <p>
+                        도메인 주도 설계에 기반하여 express로 server architecture을
+                        구현하기 힘든 단점을 보완한 프레임워크
+                    </p>
+                </div>
+                <div id="nest" class="thumbnail"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>코딩 해보기</h2>
+<p id="code_area">
+console.log("Hello World!");
+</p>
+    </section>
+</main>
 
-        <section id="history">
-            JS 의 역사
-        </section>
-
-        <section id="characteristic">
-            JS 의 특징
-        </section>
-
-        <section id="code_area">
-            console.log("Hello World!");
-        </section>
-
-    </main>
-
-    <!--푸터-->
-    <footer>
-        <pre class="footer_info">
+<!--푸터-->
+<footer>
+      <pre class="footer_info">
 © 2022 All Rights Reserved.
 팀명: NL
 주소: 서울과학기술대학교 미래관 123호
 연락처: dlqudds1234@gmail.com</pre>
-    </footer>
+</footer>
 </body>
+<script>
+    const react = document.querySelector('#react');
+    const next = document.querySelector('#next');
+    const express = document.querySelector('#express');
+    const nest = document.querySelector('#nest');
 
+    react.addEventListener('click', (url) => {
+        window.location.href = 'https://reactjs.org/';
+    });
+    next.addEventListener('click', (url) => {
+        window.location.href = 'https://nextjs.org/';
+    });
+    express.addEventListener('click', (url) => {
+        window.location.href = 'http://expressjs.com/';
+    });
+    nest.addEventListener('click', (url) => {
+        window.location.href = 'https://nestjs.com/';
+    });
+</script>
 </html>
