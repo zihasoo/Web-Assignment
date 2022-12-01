@@ -20,12 +20,12 @@ let table = document.querySelector(".compare_table");
 let is_clicked = false;
 
 chartChange.addEventListener("click", (e) => {
-  if (is_clicked) {
-    is_clicked = false;
+  if (!is_clicked) {
+    is_clicked = true;
     chart.style.display = "inline";
     table.style.margin = "50px 20% 0px 0px";
   } else {
-    is_clicked = true;
+    is_clicked = false;
     chart.style.display = "none";
     table.style.margin = "50px auto 0px";
   }
