@@ -13,8 +13,10 @@ main > header {
   border-bottom: 1px solid black;
 }
 
-main #box {
+main > #box {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #box > iframe {
@@ -23,31 +25,37 @@ main #box {
 
 #box #outline {
   display: inline-block;
-  width: 100px;
-  margin: 0 auto;
-  border-radius: 15px;
+  width: 300px;
   text-align: center;
-  height: 200px;
-  position: relative;
-  left: 140px;
-  bottom: 40px;
+  height: inherit;
+}
+
+#box #outline ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #box #outline li {
-  margin: 20px 0;
   padding: 20px;
-  background-color: rgb(230, 226, 226);
-  border-radius: 15px;
+  background-color: rgb(206, 132, 132);
+  transition: all 0.3s linear;
+  border-radius: 10px;
 }
 
-#box #outline li a:hover {
-  color: fuchsia;
-  font-weight: bold;
+#box #outline li:hover {
+  background-color: black;
 }
-#box #outline li span {
+
+#box #outline ul li a span {
+  color: white;
+}
+#box #outline li:nth-child(n + 2):nth-child(-n + 4) span {
   transition: font-size 2s;
 }
-#box #outline li span:hover {
+#box #outline li:nth-child(n + 2):nth-child(-n + 4) span:hover {
   font-size: 2em;
 }
 
