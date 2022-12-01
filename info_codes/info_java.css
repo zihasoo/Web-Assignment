@@ -72,6 +72,7 @@ main > #box {
 }
 
 main #code_area {
+  margin-top: 20px;
   font-size: medium;
   max-width: 4000px;
   height: 540px;
