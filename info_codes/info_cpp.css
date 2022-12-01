@@ -13,14 +13,16 @@ main > header {
 
 @media (min-width: 1000px) {
     body > aside {
-        width: 120px;
-        height: 200px;
+        width: 20%;
         position: fixed;
-        top: 200px;
-        left: 50px;
-        font-size: larger;
-        font-weight: bold;
     }
+}
+
+body > aside ul {
+    margin: 70px auto;
+    width: 40%;
+    font-size: larger;
+    font-weight: bold;
 }
 
 body > aside ul li {
